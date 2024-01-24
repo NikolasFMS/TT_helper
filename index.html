@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Top Ten helper</title>
+</head>
+
+<body>
+
+    <!-- Аудио для начала и конца -->
+    <audio id="clickSound" src="audio/ui-click-end.mp3"></audio>
+    <!-- Основной контент страницы -->
+    <div class="app">
+        <div class="button-top-container">
+            <div class="button-back-container">
+                <div class="button back" onclick="back()">
+                    <img src="img/back1.png" alt="backIMG" style="width:3.8vh;height:3.5vh;">
+                </div>
+            </div>
+            <div class="button-lang-container">
+                <div class="button lang" onclick="toggleLanguage()">RU</div>
+            </div>
+        </div>
+        <!-- Место, где будут динамически создаваться страницы -->
+        <div id="content"></div>
+
+        <!-- Прелоадер -->
+        <div class="preloader_malc" id="preloader_malc">
+            <div>Loading...</div>
+        </div>
+
+        <!-- Стили для прелоадера -->
+        <style type="text/css">
+            #preloader_malc {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #222;
+                z-index: 99;
+            }
+
+            #preloader_malc div {
+                background: #222;
+                width: 100%;
+                height: 100%;
+                font-family: "Ruda", sans-serif;
+                font-size: 2vh;
+                color: #ccc;
+                text-align: center;
+                position: fixed;
+                z-index: 9999;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0 auto;
+                padding: 50vh 0;
+            }
+        </style>
+
+        <!-- Скрипт для отображения прелоадера -->
+        <script type="text/javascript">
+            window.onload = function () {
+                setTimeout(function () {
+                    document.getElementById("preloader_malc").style.display = "none";
+                }, 700);
+            };
+        </script>
+
+        <script src="scripts/script.js"></script>
+
+</body>
+
+<div id="overlay">
+    <div id="popup">
+        <H1 id="first">СЛЕДУЮЩИЙ</H1>
+        <H1 id="second">РАУНД</H1>
+        <div class="popup-container">
+            <button class="button action-button 1" id="button1" onclick="performAction1()">ДАЛЕЕ</button>
+            <button class="button action-button 2" id="button2"onclick="performAction2()">ОТМЕНА</button>
+        </div>
+    </div>
+</div>
+
+</html>
