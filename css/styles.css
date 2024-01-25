@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: var(--background);
+    background-color: #0a2c2f;
     overflow: hidden;
     height: 100svh;
     width: 100%;
@@ -35,12 +35,18 @@ body {
 }
 
 .app {
+    background-color: #075251;
     width: 100%;
     height: 100%;
-    max-width: 580px;
+    max-width: 420px;
     min-height: 313px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: flex;
     align-items: center;
 }
 
@@ -113,25 +119,27 @@ h1 {
 }
 
 .button-top-container {
-    width: 97%;
+    width: 94%;
     height: 8vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between
+    justify-content: space-between;
+    margin: 1vh;
 }
 
 .button.back,
 .button.lang {
     width: 6vh;
-    height: 4.5vh;
+    height: 6vh;
 }
 
 .next-container {
     width: 100%;
+    max-width: 525px;
     position: fixed;
-    bottom: 2vh;
+    bottom: 4vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
