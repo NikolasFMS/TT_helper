@@ -181,6 +181,10 @@ h1 {
     font-size: 2vh;
 }
 
+.displayText:hover {
+    background-color: #fff30f;
+}
+
 .number {
     width: 20%;
     position: fixed;
