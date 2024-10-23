@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+    <title>Top Ten helper</title>
+</head>
+
+<body>
+
+    <!-- Основной контент страницы -->
+    <div class="app">
+        <div class="button-top-container">
+            <div class="button-back-container">
+                <div class="button back" onclick="back()">
+                    <img src="img/back1.png" alt="backIMG" style="width:3.8vh;height:3.5vh;">
+                </div>
+            </div>
+            <div class="button-lang-container">
+                <div class="button lang" onclick="toggleLanguage()">en</div>
+            </div>
+        </div>
+        <!-- Место, где будут динамически создаваться страницы -->
+        <div id="content" class="content"></div>
+
+        <!-- Прелоадер -->
+        <div class="preloader_malc" id="preloader_malc">
+            <div>Loading...</div>
+        </div>
+
+        <script src="scripts/script.js"></script>
+
+</body>
+
+<div id="overlay">
+    <div id="popup">
+        <H1 id="first">СЛЕДУЮЩИЙ</H1>
+        <H1 id="second">РАУНД</H1>
+        <div class="popup-container">
+            <button class="button action-button 1" id="button1" onclick="performAction1()">ДАЛЕЕ</button>
+            <button class="button action-button 2" id="button2"onclick="performAction2()">ОТМЕНА</button>
+        </div>
+    </div>
+</div>
+
+</html>

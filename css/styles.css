@@ -1,0 +1,272 @@
+:root {
+    --background: #075251;
+    /* Фон */
+    --text-H1: #fff;
+    /* Цвет заголовка H1 */
+    --text-button: #075251;
+    /* Текст кнопок */
+    --border-button: #000;
+    /* Цвет обводки кнопки */
+    --button: #fff;
+    /* Цвет кнопки */
+    --button-hover-text: #B7E0B4;
+    /* Цвет текста вылделения кнопки */
+    --button-active-text: #E9EDD5;
+    /* Цвет текста нажатой кнопки */
+    --button-active-background: #B7E0B4;
+    /* Цвет нажатой кнопки */
+}
+
+body {
+    background-color: var(--background);
+    overflow: hidden;
+    height: 100svh;
+    width: 100%;
+    margin: 0;
+    user-select: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.app {
+    background-color: #075251;
+    width: 100%;
+    height: 100%;
+    max-width: 420px;
+    min-height: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page1 {
+    justify-content: center;
+}
+
+.logo-container {
+    height: 25vh;
+    width: 20vh;
+}
+
+.img.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--text-H1);
+    font-size: 3vh;
+    line-height: 80%;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-decoration-line: none;
+}
+
+.button-table-container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    flex-wrap: wrap;
+    width: 90vw;
+    max-width: 350px;
+}
+
+.button {
+    font-size: 3vh;
+    border-radius: 0.5vh;
+    border: 0.2vh solid var(--border-button);
+    text-transform: uppercase;
+    background-color: var(--button);
+    cursor: pointer;
+    color: var(--text-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:active {
+    color: var(--text-button);
+    background-color: var(--button-active-background);
+}
+
+.button.table {
+    width: 10vh;
+    height: 10vh;
+    font-size: 6vh;
+}
+
+.button-top-container {
+    width: 94%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: 1vh;
+}
+
+.button.back,
+.button.lang {
+    width: 6vh;
+    height: 6vh;
+}
+
+.next-container {
+    width: 100%;
+    max-width: 525px;
+    position: fixed;
+    bottom: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button.next{
+    width: 25vh;
+    height: 6vh;
+}
+
+.button.min,
+.button.plus {
+    width: 6vh;
+    height: 6vh;
+}
+
+.cards.text {
+    margin-top: 2vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 0.5vh;
+    flex-wrap: wrap;
+    width: 97%;
+    max-width: 420px;
+    min-width: 300px;
+}
+
+.displayText,
+.finish {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--text-H1);
+    border-radius: 0.5vh;
+    border: 0.2vh solid var(--border-button);
+    padding: 2vh;
+    font-size: 2vh;
+}
+
+.number {
+    width: 20%;
+    position: fixed;
+    top: 1vh;
+    text-align: center;
+    font-size: 4vh;
+}
+
+g {
+    color: #2a8925;
+    font-weight: 900;
+}
+
+r,
+.min {
+    color: #a81f21;
+    font-weight: 900;
+}
+
+.finalResult{
+    position: fixed;
+    font-size: 6vh;
+    margin-bottom: -2.5vh; 
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#popup {
+    background: var(--background);
+    padding: 5vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-H1);
+}
+
+.popup-container {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.action-button {
+    font-size: 2.5vh;
+    height: 6vh;
+    width: 25vh;
+}
+
+#preloader_malc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #222;
+    z-index: 99;
+}
+
+#preloader_malc div {
+    background: #222;
+    width: 100%;
+    height: 100%;
+    font-family: "Ruda", sans-serif;
+    font-size: 2vh;
+    color: #ccc;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 50vh 0;
+}
