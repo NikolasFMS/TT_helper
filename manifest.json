@@ -1,0 +1,61 @@
+{
+    "id": "./",
+    "name": "Top Ten — Тип-Топ",
+    "short_name": "Тип-Топ",
+    "description": "Помощник для кооперативной настольной игры «Тип-Топ» и «Тип-Топ 18+» (Top Ten): 965 тем, карты 1–10, счётчик жетонов и правила.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#075251",
+    "theme_color": "#075251",
+    "icons": [
+        {
+            "src": "ico/icon_x48.png",
+            "sizes": "48x48",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "ico/icon_x72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "ico/icon_x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "ico/icon_x128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "ico/icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "ico/icon_x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "ico/icon_x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "ico/icon_x1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}

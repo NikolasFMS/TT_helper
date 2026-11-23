@@ -1,0 +1,14 @@
+{
+  "name": "top-ten-helper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Top Ten helper static web app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node --check server.js && node --check scripts/cards-data.js && node --check scripts/cards-18-en.js && node --check scripts/script.js",
+    "lint": "node --check server.js && node --check scripts/cards-data.js && node --check scripts/cards-18-en.js && node --check scripts/script.js && node --check service-worker.js"
+  },
+  "dependencies": {}
+}
